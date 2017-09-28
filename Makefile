@@ -2,7 +2,7 @@ default:
 	make img
 
 ipl.bin:
-	nasm -o bin/ipl.bin ipl.asm
+	nasm -o bin/ipl.bin ipl.asm -l lst/ipl.lst
 
 helloos.img:
 	make ipl.bin
